@@ -4,4 +4,4 @@ This repository is for my university course Digital Design and Fabrication (SoSe
 
 It contains assignments, exercises, and project work.
 
-Student: Usama Asif
+Student: Muhammad Usama Asif
