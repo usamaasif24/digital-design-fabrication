@@ -127,6 +127,7 @@ The switch was replaced with a PWM signal generator powered from the USB module.
 **Observations:** Brightness increases proportionally with duty cycle. At 2% the strip is barely visible; at 100% it reaches full brightness. The MOSFET switches on and off rapidly — the human eye integrates the pulses into a steady perceived intensity equal to the duty cycle percentage of full brightness. Compared to the potentiometer in Task 1.3, PWM is more energy efficient as no power is wasted as heat in a resistor.
 
 ### Part B — Switching Frequency (D = 50%)
+https://github.com/user-attachments/assets/e2ec74df-cd70-4559-a760-28ac156d2e80
 
 | Frequency | Observation |
 |-----------|-------------|
@@ -139,6 +140,5 @@ The switch was replaced with a PWM signal generator powered from the USB module.
 
 
 
-https://github.com/user-attachments/assets/e2ec74df-cd70-4559-a760-28ac156d2e80
 
 
