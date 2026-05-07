@@ -137,9 +137,8 @@ The switch was replaced with a PWM signal generator powered from the USB module.
 
 **Observations:** At low frequencies the eye resolves individual on/off pulses as visible flicker. As frequency increases past approximately 45–50 Hz — the human visual flicker fusion threshold — the brain can no longer distinguish individual pulses and perceives a continuous steady light. At 100 Hz the strip appears completely smooth. Frequency does not affect brightness — only duty cycle does.
 
-<p align="center">
-  <video width="300" height="400" controls>
-    <source src="task2_2_video.mp4" type="video/mp4">
-  </video>
-</p>
-<p align="center"><em>Video 2: Demonstration of PWM duty cycle control on LED strip.</em></p>
+
+
+https://github.com/user-attachments/assets/e2ec74df-cd70-4559-a760-28ac156d2e80
+
+
