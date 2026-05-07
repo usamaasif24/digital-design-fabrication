@@ -51,14 +51,6 @@ A 1 kΩ potentiometer (R2) was added in series, with its wiper as the variable o
 
 <br>
 
-<p align="center">
-  <img src="task1_3_notes.jpg" width="500">
-</p>
-
-<p align="center">
-  <em>Fig 3b: Lab notebook measurements</em>
-</p>
-
 <br><br>
 
 <p align="center">
