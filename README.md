@@ -51,12 +51,12 @@ A 1 kΩ potentiometer (R2) was added in series, with its wiper as the variable o
 </p>
 <p align="center"><em>Fig 3b: Lab notebook measurements</em></p>
 
-<p align="center">
-  <video src="https://github.com/user-attachments/assets/a8bee591-fca0-44c0-987e-4fc35da2f613"
-         width="500"
-         controls>
+<div align="center">
+  <video width="500" controls>
+    <source src="https://github.com/user-attachments/assets/a8bee591-fca0-44c0-987e-4fc35da2f613" type="video/mp4">
   </video>
-</p>
+</div>
+
 | Position | V_LED | V2 |
 |----------|-------|----|
 | Full brightness | 2.97 V | 2.99 V |
