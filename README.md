@@ -46,11 +46,8 @@ A 1 kΩ potentiometer (R2) was added in series, with its wiper as the variable o
 </p>
 
 <p align="center">
-  <em>Fig 3a: Dimmable LED circuit with potentiometer</em>
+  <em>Fig 3: Dimmable LED circuit with potentiometer</em>
 </p>
-
-<br>
-
 <br><br>
 
 <p align="center">
