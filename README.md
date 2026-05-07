@@ -44,18 +44,16 @@ A 1 kΩ potentiometer (R2) was added in series, with its wiper as the variable o
 <p align="center">
   <img src="task1_3_potentiometer.jpg" width="500">
 </p>
+<p align="center"><em>Fig 3a: Dimmable LED circuit with potentiometer</em></p>
 
 <p align="center">
-  <em>Fig 3: Dimmable LED circuit with potentiometer</em>
+  <img src="task1_3_notes.jpg" width="500">
 </p>
-<br><br>
-
-<p align="center">
-  <em>Video 1: Demonstration of the dimmable LED circuit with potentiometer.</em>
-</p>
+<p align="center"><em>Fig 3b: Lab notebook measurements</em></p>
 
 https://github.com/user-attachments/assets/a8bee591-fca0-44c0-987e-4fc35da2f613
 
+<p align="center"><em>Video 1: Demonstration of the dimmable LED circuit with potentiometer.</em></p>
 
 | Position | V_LED | V2 |
 |----------|-------|----|
@@ -64,8 +62,6 @@ https://github.com/user-attachments/assets/a8bee591-fca0-44c0-987e-4fc35da2f613
 | OFF | 0.37 V | 4.58 V |
 
 **Observations:** The potentiometer acts as a variable voltage divider. As its resistance increases, V2 rises and V_LED falls. When V_LED drops below the LED forward voltage threshold (~2 V), the LED turns off completely. The relationship is inverse and continuous — rotating the wiper provides smooth, analogue brightness control. V2 + V_LED ≈ 5 V at all positions, confirming KVL.
-
-<p align="center"><em>Video 1: Demonstration of the dimmable LED circuit with potentiometer.</em></p>
 
 ---
 
@@ -109,6 +105,11 @@ The switch was replaced with a PWM signal generator powered from the USB module.
 <p align="center"><em>Fig 5c: D = 40% — medium brightness</em></p>
 
 <p align="center">
+  <img src="task2_2_duty_60.jpg" width="500">
+</p>
+<p align="center"><em>Fig 5d: D = 60% — bright</em></p>
+
+<p align="center">
   <img src="task2_2_duty_100.jpg" width="500">
 </p>
 <p align="center"><em>Fig 5e: D = 100% — full brightness</em></p>
@@ -124,7 +125,10 @@ The switch was replaced with a PWM signal generator powered from the USB module.
 **Observations:** Brightness increases proportionally with duty cycle. At 2% the strip is barely visible; at 100% it reaches full brightness. The MOSFET switches on and off rapidly — the human eye integrates the pulses into a steady perceived intensity equal to the duty cycle percentage of full brightness. Compared to the potentiometer in Task 1.3, PWM is more energy efficient as no power is wasted as heat in a resistor.
 
 ### Part B — Switching Frequency (D = 50%)
+
 https://github.com/user-attachments/assets/e2ec74df-cd70-4559-a760-28ac156d2e80
+
+<p align="center"><em>Video 2: Demonstration of PWM duty cycle control on LED strip.</em></p>
 
 | Frequency | Observation |
 |-----------|-------------|
@@ -134,8 +138,3 @@ https://github.com/user-attachments/assets/e2ec74df-cd70-4559-a760-28ac156d2e80
 | 100 Hz | No flicker — smooth steady glow at 50% brightness |
 
 **Observations:** At low frequencies the eye resolves individual on/off pulses as visible flicker. As frequency increases past approximately 45–50 Hz — the human visual flicker fusion threshold — the brain can no longer distinguish individual pulses and perceives a continuous steady light. At 100 Hz the strip appears completely smooth. Frequency does not affect brightness — only duty cycle does.
-
-
-
-
-
