@@ -59,11 +59,10 @@ A 1 kΩ potentiometer (R2) was added in series, with its wiper as the variable o
 
 **Observations:** The potentiometer acts as a variable voltage divider. As its resistance increases, V2 rises and V_LED falls. When V_LED drops below the LED forward voltage threshold (~2 V), the LED turns off completely. The relationship is inverse and continuous — rotating the wiper provides smooth, analogue brightness control. V2 + V_LED ≈ 5 V at all positions, confirming KVL.
 
-<p align="center">
-  <video width="300" height="400" controls>
-    <source src="task1_3_video.mp4" type="video/mp4">
-  </video>
-</p>
+
+https://github.com/user-attachments/assets/a8bee591-fca0-44c0-987e-4fc35da2f613
+
+
 <p align="center"><em>Video 1: Demonstration of the dimmable LED circuit with potentiometer.</em></p>
 
 ---
