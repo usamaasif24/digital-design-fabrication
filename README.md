@@ -51,6 +51,8 @@ A 1 kΩ potentiometer (R2) was added in series, with its wiper as the variable o
 </p>
 <p align="center"><em>Fig 3b: Lab notebook measurements</em></p>
 
+https://github.com/user-attachments/assets/a8bee591-fca0-44c0-987e-4fc35da2f613
+
 | Position | V_LED | V2 |
 |----------|-------|----|
 | Full brightness | 2.97 V | 2.99 V |
@@ -58,10 +60,6 @@ A 1 kΩ potentiometer (R2) was added in series, with its wiper as the variable o
 | OFF | 0.37 V | 4.58 V |
 
 **Observations:** The potentiometer acts as a variable voltage divider. As its resistance increases, V2 rises and V_LED falls. When V_LED drops below the LED forward voltage threshold (~2 V), the LED turns off completely. The relationship is inverse and continuous — rotating the wiper provides smooth, analogue brightness control. V2 + V_LED ≈ 5 V at all positions, confirming KVL.
-
-
-https://github.com/user-attachments/assets/a8bee591-fca0-44c0-987e-4fc35da2f613
-
 
 <p align="center"><em>Video 1: Demonstration of the dimmable LED circuit with potentiometer.</em></p>
 
