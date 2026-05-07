@@ -51,7 +51,13 @@ A 1 kΩ potentiometer (R2) was added in series, with its wiper as the variable o
 </p>
 <p align="center"><em>Fig 3b: Lab notebook measurements</em></p>
 
-https://github.com/user-attachments/assets/a8bee591-fca0-44c0-987e-4fc35da2f613
+<br><br>
+
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/a8bee591-fca0-44c0-987e-4fc35da2f613">
+    Video 1: Demonstration of the dimmable LED circuit with potentiometer
+  </a>
+</p>
 
 
 | Position | V_LED | V2 |
