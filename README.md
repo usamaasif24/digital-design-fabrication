@@ -107,10 +107,6 @@ The switch was replaced with a PWM signal generator powered from the USB module.
 <p align="center"><em>Fig 5c: D = 40% — medium brightness</em></p>
 
 <p align="center">
-  <img src="task2_2_duty_60.jpg" width="500">
-</p>
-
-<p align="center">
   <img src="task2_2_duty_100.jpg" width="500">
 </p>
 <p align="center"><em>Fig 5e: D = 100% — full brightness</em></p>
