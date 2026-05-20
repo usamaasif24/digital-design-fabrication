@@ -192,6 +192,8 @@ The LCD communicates over I2C using 4 wires. The I2C scanner returned address `0
 
 https://github.com/user-attachments/assets/531323ed-8c19-41d9-a475-2009a41c4adf
 
+https://github.com/user-attachments/assets/18d1db24-597a-40fb-8042-73b2eb9d5078
+
 <p align="center"><em>Video 4: LCD test — message displayed successfully</em></p>
 
 **Observations:** The LCD displayed "Hello! LCD Working" correctly on two lines once the right I2C address was set in the code.
