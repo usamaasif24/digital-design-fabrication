@@ -173,7 +173,7 @@ The buzzer was connected to digital pin 12 through a 220 Ω resistor. The `buzze
 </p>
 <p align="center"><em>Fig 6: Buzzer connected to Arduino Uno on breadboard</em></p>
 
-https://github.com/user-attachments/assets/531323ed-8c19-41d9-a475-2009a41c4adf
+https://github.com/user-attachments/assets/9a6e0dba-1531-4783-a1a0-b57ab22247ac
 
 <p align="center"><em>Video 3: Buzzer test — different tones produced by changing delay values</em></p>
 
@@ -190,7 +190,7 @@ The LCD communicates over I2C using 4 wires. The I2C scanner returned address `0
 </p>
 <p align="center"><em>Fig 7: LCD displaying "Hello! LCD Working"</em></p>
 
-https://github.com/user-attachments/assets/9a6e0dba-1531-4783-a1a0-b57ab22247ac
+https://github.com/user-attachments/assets/531323ed-8c19-41d9-a475-2009a41c4adf
 
 <p align="center"><em>Video 4: LCD test — message displayed successfully</em></p>
 
