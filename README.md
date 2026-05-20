@@ -171,7 +171,7 @@ The buzzer was connected to digital pin 12 of the Arduino Uno through a 220 Ω c
 </p>
 <p align="center"><em>Fig 6: Buzzer connected to Arduino Uno via 220 Ω resistor on breadboard</em></p>
 
-https://github.com/usamaasif24/digital-design-fabrication/raw/main/video_buzzer.mp4
+https://github.com/user-attachments/assets/531323ed-8c19-41d9-a475-2009a41c4adf
 
 <p align="center"><em>Video 3: Buzzer producing different tones by changing delay values in code</em></p>
 
@@ -190,7 +190,7 @@ The LCD is a 2x16 character display that communicates over the I2C protocol usin
 </p>
 <p align="center"><em>Fig 7: Arduino Uno connected to I2C LCD screen displaying "Hello! LCD Working"</em></p>
 
-https://github.com/usamaasif24/digital-design-fabrication/raw/main/video_lcd.mp4
+https://github.com/user-attachments/assets/9a6e0dba-1531-4783-a1a0-b57ab22247ac
 
 <p align="center"><em>Video 4: LCD screen displaying test message after successful I2C configuration</em></p>
 
