@@ -235,6 +235,13 @@ All components were combined into a working alarm clock. The LCD shows the curre
 </p>
 <p align="center"><em>Fig 9: Final alarm clock — LCD showing "Time: 12:44:56" and "Alarm is ON"</em></p>
 
+
+https://github.com/user-attachments/assets/3cdfd8dd-a4b9-4844-b665-b89b80fd38cf
+
+
+https://github.com/user-attachments/assets/58a5d6a6-7fd8-4745-bccc-1719932bdc61
+
+
 **Observations:** The alarm clock worked as intended. The time was accurate, the alarm triggered at the correct time, and the buzzer could be dismissed with a button press without touching the code.
 
 **What went wrong:** When everything was connected together the LCD showed random garbled characters. After checking all wires we found a loose connection on the I2C line. Re-seating it fixed the display straight away.
