@@ -218,7 +218,7 @@ The RTC module was connected to the same I2C bus as the LCD. The scanner now det
 Push buttons were connected using the Arduino's built-in pull-up resistors with `pinMode(pin, INPUT_PULLUP)`. The `Button.h` library was used to handle debouncing.
 
 <p align="center">
-  <img src="WhatsApp Image 2026-05-21 at 10.13.06 AM.jpeg" width="500">
+  <img src="alarm_clock_2.jpg" width="500">
 </p>
 <p align="center"><em>Fig 10: Alarm clock showing alarm time set to 12:00 and current time 12:06:04</em></p>
 
