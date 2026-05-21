@@ -244,8 +244,6 @@ https://github.com/user-attachments/assets/58a5d6a6-7fd8-4745-bccc-1719932bdc61
 <p align="center"><em>Video 6: Alarm dismissal — turning off the alarm using push button</em></p>
 
 **Observations:** The alarm clock worked as intended. The time was accurate, the alarm triggered at the correct time, and the buzzer could be dismissed with a button press without touching the code.
-
-**What went wrong:** When everything was connected together the LCD showed random garbled characters. After checking all wires we found a loose connection on the I2C line. Re-seating it fixed the display straight away.
 ---
 
 ## Components Used
