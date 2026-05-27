@@ -256,3 +256,64 @@ https://github.com/user-attachments/assets/58a5d6a6-7fd8-4745-bccc-1719932bdc61
 - Push buttons x4
 - Breadboard + jumper wires
 - Libraries: `LiquidCrystal_I2C.h`, `RTClib.h`, `Button.h`
+
+---
+
+---
+
+# Exercise 3: Sensors & Actuators
+
+**Digital Design & Fabrication**  
+Carl von Ossietzky Universität Oldenburg · May 2026
+
+---
+
+## Overview
+
+In this exercise a pneumatic system was built consisting of two air pumps, an air valve, and an inflatable pillow. The system was controlled by an Arduino Uno through three IRF520 MOSFET driver modules — one per actuator. The exercise had two parts: assembling and verifying the pneumatic and electrical circuit, and designing a sensor-driven interaction to control inflation and deflation.
+
+---
+
+## Part A — Pneumatic & Electrical Circuit
+
+The electrical circuit was assembled using three IRF520 MOSFET modules to control two pumps and one air valve. Each module's control side was connected to an Arduino digital pin, and the load side was connected to the lab power supply. A test sketch was written to turn each actuator on and off in sequence to verify correct switching — the built-in status LED on each module confirmed when the MOSFET was conducting.
+
+The pneumatic circuit was then assembled by connecting the pumps and valve to the inflatable pillow using silicone tubing. The air valve (FA0520E) has three ports — the middle flanged port is the common connection, the metal-end port is connected when unpowered, and the plastic-end port is connected when powered. This switching behaviour was used to route air between the inflation and deflation pumps.
+
+https://github.com/user-attachments/assets/0a7ab42b-bb2b-4fa0-86e0-5ba6e94dbbc4
+
+<p align="center"><em>Video 7: Pneumatic circuit test — pillow inflating and deflating</em></p>
+
+**Observations:** The inflation pump worked correctly and the pillow inflated as expected. Each actuator responded correctly to the Arduino control signal and the MOSFET status LEDs confirmed proper switching.
+
+**What went wrong:** Inflation was working but there was an issue with deflation — the pillow was not deflating properly. After diagnosing the problem we found the valve port assignment was incorrect. Rewiring the tubing to the correct ports on the valve resolved the issue and the full inflate/deflate cycle worked correctly after that.
+
+---
+
+## Part B — Sensor Interaction
+
+An ultrasonic distance sensor was used to create a gesture-based interaction. The sensor detects hand movement — moving a hand downward towards the sensor mimics the action of a bicycle pump, triggering inflation. Releasing the hand triggers deflation. This creates a playful and intuitive physical interaction with the pneumatic system.
+
+The sensor was wired to the Arduino and the `NewPing` library was used to read distance values. A threshold distance was defined in code — when the measured distance dropped below the threshold (hand moving close), the inflation pump was activated. When the distance increased again, the deflation pump was triggered.
+
+<p align="center"><em>Video 8: Sensor interaction — hand gesture controlling inflation</em></p>
+
+<p align="center"><em>Video 9: Full system demonstration — sensor-driven inflate and deflate cycle</em></p>
+
+**Observations:** The ultrasonic sensor responded reliably to hand movements. The interaction felt natural — pushing down to inflate and stepping back to deflate mimicked a real pump action. The MOSFET modules handled the pump current without any issues and the valve switched correctly between inflation and deflation paths.
+
+**What went wrong:** Initially the sensor was giving inconsistent readings due to reflections from nearby surfaces on the breadboard. Moving the sensor to a clearer position with less obstruction improved the readings significantly. There was also a brief delay needed in the code between switching the pumps to avoid both running simultaneously, which could have caused pressure issues in the tubing.
+
+---
+
+## Components Used
+
+- Arduino Uno
+- 2x Air Pump ZR370-02PM (4.5V, ~500mA each)
+- 1x Air Valve FA0520E (6V, ~400mA)
+- 3x IRF520 MOSFET Driver Modules
+- Ultrasonic Distance Sensor
+- Inflatable pillow + silicone tubing
+- Lab power supply (load side)
+- USB power (Arduino + sensor)
+- Library: `NewPing.h`
