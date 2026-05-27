@@ -296,13 +296,15 @@ An ultrasonic distance sensor was used to create a gesture-based interaction. Th
 
 The sensor was wired to the Arduino and the `NewPing` library was used to read distance values. A threshold distance was defined in code — when the measured distance dropped below the threshold (hand moving close), the inflation pump was activated. When the distance increased again, the deflation pump was triggered.
 
+https://github.com/user-attachments/assets/0e2c1508-46c0-4f7f-ac64-66a07c5c95a7
+
 <p align="center"><em>Video 8: Sensor interaction — hand gesture controlling inflation</em></p>
+
+https://github.com/user-attachments/assets/47d95dc2-21e7-4a35-a051-9deea6457f63
 
 <p align="center"><em>Video 9: Full system demonstration — sensor-driven inflate and deflate cycle</em></p>
 
 **Observations:** The ultrasonic sensor responded reliably to hand movements. The interaction felt natural — pushing down to inflate and stepping back to deflate mimicked a real pump action. The MOSFET modules handled the pump current without any issues and the valve switched correctly between inflation and deflation paths.
-
-**What went wrong:** Initially the sensor was giving inconsistent readings due to reflections from nearby surfaces on the breadboard. Moving the sensor to a clearer position with less obstruction improved the readings significantly. There was also a brief delay needed in the code between switching the pumps to avoid both running simultaneously, which could have caused pressure issues in the tubing.
 
 ---
 
