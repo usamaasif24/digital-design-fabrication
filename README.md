@@ -319,3 +319,73 @@ https://github.com/user-attachments/assets/47d95dc2-21e7-4a35-a051-9deea6457f63
 - Lab power supply (load side)
 - USB power (Arduino + sensor)
 - Library: `NewPing.h`
+
+---
+
+---
+
+# Exercise 4: E-Textiles — LED Patch
+
+**Physical Computing (inf175)**  
+Carl von Ossietzky Universität Oldenburg · June 2026
+
+---
+
+## Overview
+
+In this exercise an e-textile LED patch was designed and hand-sewn onto fabric. The goal was to create a wearable patch that can be attached to clothing, gain experience with soft circuits and conductive thread, and learn to handle unexpected setbacks during the making process.
+
+---
+
+## Design & Planning
+
+A paper template was created first to plan the layout of the patch, the position of the LEDs, and the routing of the conductive thread traces. A parallel circuit was chosen over a series circuit — conductive thread has relatively high resistance, and a series circuit would have caused uneven brightness or some LEDs not lighting up at all. In a parallel circuit the voltage remains constant across all LEDs, ensuring all five light up at the same brightness.
+
+The patch was cut from a ribbed fabric textile into a rounded shield shape. The circuit layout was sketched with a fabric pen before sewing began.
+
+---
+
+## Assembly
+
+The sewable 3V coin battery holder was placed at the centre of the base fabric and stitched down with conductive thread. Five sewable LEDs were positioned around it — two on the upper left and right, one at the top centre, and two at the lower left and right. Each LED was connected in parallel using conductive thread sewn with a back stitch, connecting the positive pads to the positive terminal of the battery and the negative pads to the negative terminal.
+
+Care was taken to keep the positive and negative thread traces completely separate to avoid short circuits. The thread was knotted securely at each connection point.
+
+<p align="center">
+  <img src="etextile_back.jpg" width="500">
+</p>
+<p align="center"><em>Fig 11: Back of the e-textile patch showing sewable LEDs, conductive thread traces and coin battery holder</em></p>
+
+<p align="center">
+  <img src="etextile_front.jpg" width="500">
+</p>
+<p align="center"><em>Fig 12: Front of the patch with all 5 LEDs glowing through the fabric</em></p>
+
+https://github.com/user-attachments/assets/b6fee284-a17e-4c3b-b6bc-1ee5687465d8
+
+<p align="center"><em>Video 10: E-textile patch in operation — all LEDs lit</em></p>
+
+---
+
+## Observations
+
+All five LEDs lit up when the battery switch was turned on. The parallel circuit worked as expected — each LED received the same voltage and glowed at consistent brightness. The fabric diffused the light nicely from the front, giving a soft warm glow through the textile. The coin battery holder with its built-in on/off switch made it easy to power the circuit on and off without disconnecting anything.
+
+---
+
+## What went wrong
+
+Threading the conductive thread through the needle was more difficult than regular thread — a needle threader was used as recommended. Keeping the thread traces from crossing each other while maintaining a tidy stitch pattern required careful planning. At one point during sewing a loose knot caused one LED to flicker — re-tightening the connection at that pad fixed it. Nail polish was applied over the knots at the end to insulate the connections and prevent them from loosening.
+
+---
+
+## Components Used
+
+- Sewable 3V coin battery holder (with on/off switch)
+- 5x sewable LEDs
+- Conductive thread
+- Ribbed fabric (base textile)
+- Sewing needle + needle threader
+- Fabric pen
+- Scissors
+- Nail polish (for insulating knots)
