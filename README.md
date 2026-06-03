@@ -375,8 +375,7 @@ All five LEDs lit up when the battery switch was turned on. The parallel circuit
 
 ## What went wrong
 
-Threading the conductive thread through the needle was more difficult than regular thread — a needle threader was used as recommended. Keeping the thread traces from crossing each other while maintaining a tidy stitch pattern required careful planning. At one point during sewing a loose knot caused one LED to flicker — re-tightening the connection at that pad fixed it. Nail polish was applied over the knots at the end to insulate the connections and prevent them from loosening.
-
+Threading the conductive thread through the needle was more difficult than regular thread — a needle threader was used as recommended. Keeping the thread traces from crossing each other while maintaining a tidy stitch pattern required careful planning. At one point during sewing a loose knot caused one LED to flicker — re-tightening the connection at that pad fixed it.
 ---
 
 ## Components Used
@@ -388,4 +387,3 @@ Threading the conductive thread through the needle was more difficult than regul
 - Sewing needle + needle threader
 - Fabric pen
 - Scissors
-- Nail polish (for insulating knots)
