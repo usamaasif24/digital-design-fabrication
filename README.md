@@ -473,6 +473,10 @@ In place of the in-person session on 18/06/2026, the *Introduction to CAD* learn
   <img src="onshape_learning_path.jpg" width="600">
 </p>
 <p align="center"><em>Fig 1: Onshape learning path showing all three required courses marked "Completed!"</em></p>
+<p align="center">
+  <img src="onshape_dashboard.jpg" width="600">
+</p>
+<p align="center"><em>Fig 2: My Training Dashboard — Completed: 3, confirming all three courses finished</em></p>
 
 ---
 
