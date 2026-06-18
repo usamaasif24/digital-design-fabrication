@@ -388,3 +388,69 @@ Threading the conductive thread through the needle was more difficult than regul
 - Sewing needle + needle threader
 - Fabric pen
 - Scissors
+---
+
+---
+
+# Exercise 5: Laser Cutting — Business Card
+
+**Digital Design & Fabrication**  
+Carl von Ossietzky Universität Oldenburg · June 2026
+
+---
+
+## Overview
+
+In this exercise a personalised business card was designed in Inkscape and produced using the Epilog laser cutter. The exercise covered artwork preparation, setting up the laser cutter dashboard with the correct job settings, and operating the machine to engrave and cut the final card.
+
+---
+
+## Design & Preparation
+
+The business card was designed in Inkscape with the name, title, and university affiliation laid out on the front, and the Carl von Ossietzky Universität Oldenburg branding on the back. The document was set up at A4 size in RGB colour mode, with all vector cutting lines set to a stroke width of 0.025 mm to ensure they would be recognised correctly by the laser cutter as cut lines rather than raster engraving.
+
+The artwork was positioned in the top-left corner of the page to align with the laser cutter's home position, minimising wasted material.
+
+---
+
+## Laser Cutter Setup
+
+The job was sent to the Epilog Engraver via File → Print, with the Epilog Dashboard opened through the printer properties. In the General tab, the job type was set to Vector for cutting the card outline, with the material thickness entered in millimetres. CO2 was selected as the laser source, with Auto Focus and Vector Grid enabled.
+
+Speed, power, and frequency values for the vector cut were set based on the material being used, with Power Comp. enabled and Speed Comp. left off as recommended.
+
+---
+
+## Machine Operation
+
+Before starting the job, the fume extractor and compressor were switched on, as required for safe operation. The material was placed in the top-left corner of the cutting bed against the metal rulers. The Red Dot Pointer was used to set the home position for the job.
+
+The job was selected from the Job menu and started by pressing the Go button. The cutting process was monitored throughout to watch for flame-ups or any irregularities, as recommended in the safety guidelines.
+
+https://github.com/user-attachments/assets/3cfde8df-1d1d-4363-b6f6-1ac80d1e0073
+
+<p align="center"><em>Video 1: Setting up the laser cutter job and home position</em></p>
+
+https://github.com/user-attachments/assets/8ce55ab7-97ed-427f-9b59-5e109b0d84f9
+
+<p align="center"><em>Video 2: Laser cutter engraving and cutting the business card</em></p>
+
+https://github.com/user-attachments/assets/c83cf8f3-4781-4492-adf9-5cee4643edea
+
+<p align="center"><em>Video 3: Close-up of the finished business card</em></p>
+
+---
+
+## Observations
+
+The vector cutting settings worked well for the chosen material, producing clean cut edges with minimal charring. The Epilog Dashboard's General tab settings (CO2 source, Auto Focus, Vector Grid) were sufficient for a straightforward single-material job without needing Color Mapping. Positioning the artwork in the top-left corner and setting the home position correctly ensured the cut aligned precisely with the intended design. The fume extractor effectively handled the smoke produced during cutting, and the overall process was smooth from design to finished card.
+
+---
+
+## Components Used
+
+- Inkscape (artwork design)
+- Epilog laser cutter
+- Epilog Dashboard (Fusion software)
+- Material as per material settings table (Vector mode)
+- Fume extractor + compressor (Air Assist)
