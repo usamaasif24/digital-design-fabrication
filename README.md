@@ -454,3 +454,64 @@ The vector cutting settings worked well for the chosen material, producing clean
 - Epilog Dashboard (Fusion software)
 - Material as per material settings table (Vector mode)
 - Fume extractor + compressor (Air Assist)
+---
+
+---
+
+# Exercise 6: Introduction to Parametric Feature-Based CAD (Onshape Self-Study)
+
+**Digital Design & Fabrication (inf175)**
+Carl von Ossietzky Universität Oldenburg · June 2026
+
+---
+
+## Overview
+
+In place of the in-person session on 18/06/2026, the *Introduction to CAD* learning path was completed self-paced on Onshape — a free, cloud-based parametric CAD system. An account was created using the university email address. The learning path consists of three required courses — *Introduction to Parametric Feature-Based CAD*, *Introduction to Sketching*, and *Introduction to Part Studios* — which were worked through in order and all completed.
+
+<p align="center">
+  <img src="onshape_dashboard.jpg" width="600">
+</p>
+<p align="center"><em>Fig 1: Onshape training dashboard showing all three required courses completed</em></p>
+
+---
+
+## Course 1 – Introduction to Parametric Feature-Based CAD
+
+The first course introduced the principles behind parametric, feature-based modelling. In a parametric system the geometry is driven by named dimensions and parameters, so changing a value such as a length or a radius updates the model automatically instead of requiring it to be redrawn. A part is built up from an ordered stack of features — sketch, extrude, fillet and so on — recorded in a feature tree that can be edited, reordered or rolled back at any point. The course also covered the idea of design intent: deliberately building a model so that later edits propagate the way the designer expects, using constraints and relationships rather than fixed coordinates.
+
+**Observations:** The feature history is the central idea of this kind of CAD. It makes the model easy to edit after the fact, but it also creates dependencies — early features that later features rely on cannot be deleted or renamed without breaking the geometry that follows them.
+
+---
+
+## Course 2 – Introduction to Sketching
+
+The second course covered 2D sketching, which is the foundation every 3D feature is built on. A sketch is drawn on a plane or on an existing face and is made up of entities such as lines, arcs, circles and rectangles. These entities are then locked down with geometric constraints (coincident, parallel, perpendicular, tangent, equal, concentric, symmetric) and with dimensions. Onshape colour-codes the sketch state — an under-defined sketch is shown in blue and can still move, while a fully-defined sketch is shown in black with every degree of freedom locked. Fully defining a sketch before moving on is best practice.
+
+**Observations:** Constraints capture relationships between entities while dimensions capture exact values. Getting a sketch to be exactly defined — not under-constrained and not over-constrained — is the key to a model that behaves predictably when a dimension is changed later.
+
+---
+
+## Course 3 – Introduction to Part Studios
+
+The third and longest course covered the Part Studio, the environment where sketches are turned into solid geometry. Solid-creating features such as Extrude, Revolve, Sweep and Loft build 3D shapes from 2D sketches, while modifying features such as Fillet, Chamfer, Shell and the boolean operations refine the existing geometry. A single Part Studio can hold more than one part, modelled together in the same context so that parts can reference each other's geometry and stay in sync. Features are added in sequence in the feature toolbar, and the rollback bar allows new features to be inserted earlier in the history.
+
+**Observations:** Onshape's approach of modelling multiple parts in one Part Studio is different from older CAD tools where one file holds one part. Designing parts in relation to each other means that when one part's dimensions change, the parts that reference it update with it, reducing manual rework.
+
+---
+
+## Deliverable
+
+A screenshot of the completed training dashboard showing all three courses finished was uploaded to GitHub, as required, before the deadline of 16:00 on 23/06/2026.
+
+---
+
+## Components Used
+
+- Onshape (free cloud-based parametric CAD system)
+- University email account
+- Web browser
+- Learning path: Introduction to CAD
+  - Introduction to Parametric Feature-Based CAD
+  - Introduction to Sketching
+  - Introduction to Part Studios
