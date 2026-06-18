@@ -500,12 +500,6 @@ The third and longest course covered the Part Studio, the environment where sket
 
 ---
 
-## Deliverable
-
-A screenshot of the completed training dashboard showing all three courses finished was uploaded to GitHub, as required, before the deadline of 16:00 on 23/06/2026.
-
----
-
 ## Components Used
 
 - Onshape (free cloud-based parametric CAD system)
