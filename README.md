@@ -470,9 +470,13 @@ Carl von Ossietzky Universität Oldenburg · June 2026
 In place of the in-person session on 18/06/2026, the *Introduction to CAD* learning path was completed self-paced on Onshape — a free, cloud-based parametric CAD system. An account was created using the university email address. The learning path consists of three required courses — *Introduction to Parametric Feature-Based CAD*, *Introduction to Sketching*, and *Introduction to Part Studios* — which were worked through in order and all completed.
 
 <p align="center">
-  <img src="onshape_dashboard.jpg" width="600">
+  <img src="onshape_learning_path.jpg" width="600">
 </p>
-<p align="center"><em>Fig 1: Onshape training dashboard showing all three required courses completed</em></p>
+<p align="center"><em>Fig 1: Onshape learning path showing all three required courses marked "Completed!"</em></p>
+<p align="center">
+  <img src="onshape_dashboard.png" width="600">
+</p>
+<p align="center"><em>Fig 2: My Training Dashboard — Completed: 3, confirming all three courses finished</em></p>
 
 ---
 
