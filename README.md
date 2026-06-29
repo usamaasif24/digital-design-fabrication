@@ -496,15 +496,15 @@ The job was selected from the Job menu and started by pressing the Go button. Th
 
 https://github.com/user-attachments/assets/3cfde8df-1d1d-4363-b6f6-1ac80d1e0073
 
-<p align="center"><em>Video 1: Setting up the laser cutter job and home position</em></p>
+<p align="center"><em>Video 11: Setting up the laser cutter job and home position</em></p>
 
 https://github.com/user-attachments/assets/8ce55ab7-97ed-427f-9b59-5e109b0d84f9
 
-<p align="center"><em>Video 2: Laser cutter engraving and cutting the business card</em></p>
+<p align="center"><em>Video 12: Laser cutter engraving and cutting the business card</em></p>
 
 https://github.com/user-attachments/assets/c83cf8f3-4781-4492-adf9-5cee4643edea
 
-<p align="center"><em>Video 3: Close-up of the finished business card</em></p>
+<p align="center"><em>Video 13: Close-up of the finished business card</em></p>
 
 ---
 
@@ -539,11 +539,11 @@ In place of the in-person session on 18/06/2026, the *Introduction to CAD* learn
 <p align="center">
   <img src="onshape_learning_path.jpg" width="600">
 </p>
-<p align="center"><em>Fig 1: Onshape learning path showing all three required courses marked "Completed!"</em></p>
+<p align="center"><em>Fig 15: Onshape learning path showing all three required courses marked "Completed!"</em></p>
 <p align="center">
   <img src="onshape_dashboard.jpg" width="600">
 </p>
-<p align="center"><em>Fig 2: My Training Dashboard — Completed: 3, confirming all three courses finished</em></p>
+<p align="center"><em>Fig 16: My Training Dashboard — Completed: 3, confirming all three courses finished</em></p>
 
 ---
 
