@@ -392,7 +392,74 @@ Threading the conductive thread through the needle was more difficult than regul
 
 ---
 
-# Exercise 5: Laser Cutting — Business Card
+# Exercise 5: CNC Machining — Gear Tealight Holder
+
+**Makers Lab (inf174)**  
+Carl von Ossietzky Universität Oldenburg · June 2026
+
+---
+
+## Overview
+
+In this exercise a tealight holder was designed and produced on a 3-axis CNC milling machine. CNC machining is a *subtractive* process — material is removed from a solid block (the stock) until only the desired geometry remains. The goal was to take a part through the full **CAD → CAM → CNC** workflow and machine it out of solid hardwood. A gear/cog shape was chosen for the holder, with a circular pocket sized to seat a standard tealight candle.
+
+---
+
+## Design & Planning
+
+The part was designed in Inkscape as a 2D vector drawing and exported as an SVG. The outline is a single continuous closed path forming an eight-toothed gear roughly 84 mm across, with a central circle of Ø39.5 mm defining the candle pocket. A standard tealight is about 38 mm in diameter, so the 39.5 mm pocket leaves a small clearance for the candle to drop in and out easily.
+
+Two machining constraints from the lecture were kept in mind. First, on a 3-axis mill the tool only approaches from above and internal corners are always rounded to the tool radius, so the gear roots were drawn with rounded fillets rather than sharp inside corners. Second, the outline was kept as one closed path with no fill so the CAM software would read it cleanly as a single contour.
+
+<p align="center">
+  <img src="cnc_svg_design.jpg" width="400">
+</p>
+<p align="center"><em>Fig 13: Gear outline and central candle pocket designed as a 2D vector in Inkscape</em></p>
+
+---
+
+## CAM — Toolpath Preparation
+
+The SVG was imported into the CAM software to generate the toolpaths and G-code. Two operations were defined:
+
+- a **pocket** operation for the central Ø39.5 mm circle, cut to a partial depth so the tealight sits *inside* the holder rather than passing through
+- a **profile / contour** operation around the gear outline, cut to full stock depth to release the finished part
+
+A flat end mill was used for both the pocketing and the profile cut. Holding tabs were left on the outer profile so the part would not break free and shift once it was cut through. The toolpaths were simulated before export to check for collisions and to confirm the tool could reach every feature.
+
+---
+
+## Machine Operation
+
+The hardwood stock (walnut) was secured to the machine bed, the end mill was loaded, and the machine zero (X, Y, Z reference) was set against the corner of the stock. The central pocket was machined first, followed by the outer gear profile. The cut was monitored throughout. After machining, the holding tabs were cut away and the edges were lightly sanded to remove burrs and tool marks.
+
+<p align="center">
+  <img src="cnc_finished_part.jpg" width="500">
+</p>
+<p align="center"><em>Fig 14: Finished walnut gear tealight holder with a standard tealight seated in the pocket</em></p>
+
+---
+
+## Observations
+
+The CAD → CAM → CNC workflow produced a clean part that matched the design. The walnut machined well and the grain gave the finished holder a warm, dark appearance. The Ø39.5 mm pocket seated a standard tealight with just enough clearance for an easy fit. The gear roots came out with small rounded fillets — a direct consequence of the round tool only being able to approach the material from above, exactly as expected for a 3-axis mill.
+
+---
+
+## Components Used
+
+- 3-axis CNC milling machine
+- Flat end mill
+- Walnut hardwood stock
+- Inkscape (2D CAD design, SVG output)
+- CAM software (toolpath generation → G-code)
+- Standard tealight candle (~38 mm)
+
+---
+
+---
+
+# Exercise 6: Laser Cutting — Business Card
 
 **Digital Design & Fabrication**  
 Carl von Ossietzky Universität Oldenburg · June 2026
@@ -458,7 +525,7 @@ The vector cutting settings worked well for the chosen material, producing clean
 
 ---
 
-# Exercise 6: Introduction to Parametric Feature-Based CAD (Onshape Self-Study)
+# Exercise 7: Introduction to Parametric Feature-Based CAD (Onshape Self-Study)
 
 **Digital Design & Fabrication (inf175)**
 Carl von Ossietzky Universität Oldenburg · June 2026
