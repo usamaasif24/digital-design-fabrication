@@ -125,7 +125,7 @@ The switch was replaced with a PWM signal generator powered from the USB module.
 | 2% | 0.03 V |
 | 15% | 2.28 V |
 | 40% | 2.77 V |
-| 75% | 2.90 V |
+| 60% | 2.90 V |
 | 100% | 2.99 V |
 
 **Observations:** Brightness increases proportionally with duty cycle. At 2% the strip is barely visible; at 100% it reaches full brightness. The MOSFET switches on and off rapidly — the human eye integrates the pulses into a steady perceived intensity equal to the duty cycle percentage of full brightness. Compared to the potentiometer in Task 1.3, PWM is more energy efficient as no power is wasted as heat in a resistor.
