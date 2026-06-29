@@ -220,7 +220,7 @@ Push buttons were connected using the Arduino's built-in pull-up resistors with 
 <p align="center">
   <img src="alarm_clock_2.jpg" width="500">
 </p>
-<p align="center"><em>Fig 10: Alarm clock showing alarm time set to 12:00 and current time 12:06:04</em></p>
+<p align="center"><em>Fig 9: Alarm clock showing alarm time set to 12:00 and current time 12:06:04</em></p>
 
 **Observations:** The buttons worked reliably with the pull-up resistor setup. Without the library the button registered multiple presses for a single press — the `Button.h` library fixed this automatically.
 
@@ -233,7 +233,7 @@ All components were combined into a working alarm clock. The LCD shows the curre
 <p align="center">
   <img src="sub4_alarm.jpg" width="500">
 </p>
-<p align="center"><em>Fig 9: Final alarm clock — LCD showing "Time: 12:44:56" and "Alarm is ON"</em></p>
+<p align="center"><em>Fig 10: Final alarm clock — LCD showing "Time: 12:44:56" and "Alarm is ON"</em></p>
 
 https://github.com/user-attachments/assets/3cdfd8dd-a4b9-4844-b665-b89b80fd38cf
 
