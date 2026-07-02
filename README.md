@@ -270,31 +270,33 @@ Carl von Ossietzky Universität Oldenburg · May 2026
 
 ## Overview
 
-In this exercise a pneumatic system was built consisting of two air pumps, an air valve, and an inflatable pillow. The system was controlled by an Arduino Uno through three IRF520 MOSFET driver modules — one per actuator. The exercise had two parts: assembling and verifying the pneumatic and electrical circuit, and designing a sensor-driven interaction to control inflation and deflation.
+In this exercise, a pneumatic system was developed consisting of two air pumps, a directional air valve, and an inflatable pillow. The system was operated using an Arduino Uno together with three IRF520 MOSFET driver modules, with each actuator controlled separately.
+
+The task was split into two parts: first building and testing the electrical and pneumatic setup, and then adding a sensor-based interaction to control inflation and deflation automatically.
 
 ---
 
 ## Part A — Pneumatic & Electrical Circuit
 
-The electrical circuit was assembled using three IRF520 MOSFET modules to control two pumps and one air valve. Each module's control side was connected to an Arduino digital pin, and the load side was connected to the lab power supply. A test sketch was written to turn each actuator on and off in sequence to verify correct switching — the built-in status LED on each module confirmed when the MOSFET was conducting.
+The electrical part of the system was built using three IRF520 MOSFET modules, each used to switch one actuator (two pumps and one valve). Every module was connected to a separate Arduino digital output pin for control, while the load side was powered from an external lab power supply to handle the higher current demand. A simple test program was used to activate each actuator one by one and check if everything was working correctly. The built-in LEDs on the MOSFET modules were helpful for confirming when each channel was switched on.
 
-The pneumatic circuit was then assembled by connecting the pumps and valve to the inflatable pillow using silicone tubing. The air valve (FA0520E) has three ports — the middle flanged port is the common connection, the metal-end port is connected when unpowered, and the plastic-end port is connected when powered. This switching behaviour was used to route air between the inflation and deflation pumps.
+After confirming the electronics, the pneumatic setup was assembled using silicone tubing to connect both pumps and the valve to the inflatable pillow. The FA0520E valve has three ports: a central common port, one port that stays open when the valve is not powered, and another that opens when power is applied. This switching mechanism allowed control of airflow direction between inflation and deflation.
 
 https://github.com/user-attachments/assets/0a7ab42b-bb2b-4fa0-86e0-5ba6e94dbbc4
 
 <p align="center"><em>Video 7: Pneumatic circuit test — pillow inflating and deflating</em></p>
 
-**Observations:** The inflation pump worked correctly and the pillow inflated as expected. Each actuator responded correctly to the Arduino control signal and the MOSFET status LEDs confirmed proper switching.
+**Observations:** The inflation system worked properly and the pillow filled with air without issues. All MOSFET modules reacted correctly to the Arduino signals, and the indicator LEDs made it easy to see when each actuator was active.
 
-**What went wrong:** Inflation was working but there was an issue with deflation — the pillow was not deflating properly. After diagnosing the problem we found the valve port assignment was incorrect. Rewiring the tubing to the correct ports on the valve resolved the issue and the full inflate/deflate cycle worked correctly after that.
+**What went wrong:** At first, inflation worked but deflation did not. After checking the system, the issue was found in the valve tubing connections, which were not assigned correctly. Once the tubing was reconnected to the correct ports, the full inflate and deflate cycle worked as expected.
 
 ---
 
 ## Part B — Sensor Interaction
 
-An ultrasonic distance sensor was used to create a gesture-based interaction. The sensor detects hand movement — moving a hand downward towards the sensor mimics the action of a bicycle pump, triggering inflation. Releasing the hand triggers deflation. This creates a playful and intuitive physical interaction with the pneumatic system.
+For the interactive part, an ultrasonic distance sensor was used to create a simple gesture-based control system. The idea was to imitate a manual pumping action: bringing the hand closer to the sensor triggers inflation, while moving it away triggers deflation.
 
-The sensor was wired to the Arduino and the `NewPing` library was used to read distance values. A threshold distance was defined in code — when the measured distance dropped below the threshold (hand moving close), the inflation pump was activated. When the distance increased again, the deflation pump was triggered.
+The sensor was connected to the Arduino, and the NewPing library was used to measure distance values. A threshold value was set in the code so that when the hand came closer than a certain distance, the inflation pump would start. When the hand moved away again, the system switched to deflation.
 
 https://github.com/user-attachments/assets/0e2c1508-46c0-4f7f-ac64-66a07c5c95a7
 
@@ -304,7 +306,7 @@ https://github.com/user-attachments/assets/47d95dc2-21e7-4a35-a051-9deea6457f63
 
 <p align="center"><em>Video 9: Full system demonstration — sensor-driven inflate and deflate cycle</em></p>
 
-**Observations:** The ultrasonic sensor responded reliably to hand movements. The interaction felt natural — pushing down to inflate and stepping back to deflate mimicked a real pump action. The MOSFET modules handled the pump current without any issues and the valve switched correctly between inflation and deflation paths.
+**Observations:** The ultrasonic sensor responded well to hand movements and felt intuitive to use. The interaction resembled a real pumping motion. The MOSFET modules handled the pumps reliably, and the valve switched correctly between the two airflow paths.
 
 ---
 
