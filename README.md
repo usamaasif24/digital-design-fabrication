@@ -270,35 +270,35 @@ Carl von Ossietzky Universität Oldenburg · May 2026
 
 ## Overview
 
-In this exercise, we built a small pneumatic system consisting of two air pumps, a directional valve, and an inflatable pillow. The setup was controlled using an Arduino Uno together with three IRF520 MOSFET driver modules, where each actuator was controlled separately.
+In this exercise, we put together a small pneumatic setup made of two air pumps, a directional valve, and an inflatable pillow. The system was controlled using an Arduino Uno together with three IRF520 MOSFET driver modules, with each actuator handled separately.
 
-The task was split into two parts: first assembling and testing the basic electrical and pneumatic system, and then extending it with a simple sensor-based interaction to automatically control inflation and deflation.
+The task was basically in two steps: first getting the basic electrical and pneumatic setup to work, and then adding a simple sensor-based interaction to control inflation and deflation automatically.
 
 ---
 
 ## Part A — Pneumatic & Electrical Circuit
 
-For the electrical part, we used three IRF520 MOSFET modules to switch two pumps and one air valve. Each module was connected to a separate Arduino digital pin, while the pumps and valve were powered from an external lab supply because they needed more current than the Arduino can provide.
+For the electronics, we used three IRF520 MOSFET modules to switch two pumps and one air valve. Each module was connected to a separate Arduino digital pin, while the pumps and valve were powered from an external lab supply because the current demand was too high for the Arduino.
 
-We first ran a basic test sketch to switch each actuator one by one and check if everything was working correctly. The small LEDs on the MOSFET boards were actually quite helpful here since they clearly showed when each channel was active.
+We started with a simple test sketch to activate each actuator one by one and check if everything was responding correctly. The small LEDs on the MOSFET boards were actually helpful here since they clearly showed when each part was active.
 
-After that, we built the pneumatic part using silicone tubing. Both pumps and the valve were connected to the inflatable pillow. The FA0520E valve has three ports: a middle common port, one port that stays open when the valve is not powered, and another that opens when power is applied. This setup allowed us to control the airflow direction between inflation and deflation.
+After that, we assembled the pneumatic part using silicone tubing. Both pumps and the valve were connected to the inflatable pillow. The FA0520E valve has three ports: a central common port, one port that stays open when the valve is not powered, and another that opens when power is applied. This allowed us to control the airflow between inflation and deflation.
 
 https://github.com/user-attachments/assets/0a7ab42b-bb2b-4fa0-86e0-5ba6e94dbbc4
 
 <p align="center"><em>Video 7: Pneumatic circuit test — pillow inflating and deflating</em></p>
 
-**Observations:** The inflation worked as expected and the pillow filled with air without any issues. All MOSFET modules responded correctly to the Arduino signals, and the LEDs made it easy to see when each part was switching.
+**Observations:** The inflation part worked without issues and the pillow filled up as expected. All MOSFET modules responded correctly to the Arduino signals, and the LEDs made it easy to see which part was switching at any moment.
 
-**What went wrong:** At first, inflation worked but deflation did not. After going through the setup step by step, we found that the valve tubing was connected to the wrong ports. Once this was corrected, the full inflate/deflate cycle worked properly.
+**What went wrong:** At first, everything seemed fine for inflation, but deflation was not working properly. After checking the setup step by step, we found that the valve tubing was connected to the wrong ports. Once this was fixed, both inflation and deflation worked normally.
 
 ---
 
 ## Part B — Sensor Interaction
 
-For the second part, we used an ultrasonic distance sensor to create a simple gesture-based control system. The idea was to mimic a pumping motion: when the hand moves close to the sensor, the system inflates, and when the hand moves away, it deflates.
+For the second part, we used an ultrasonic distance sensor to build a simple gesture-based control setup. The idea was to imitate a pumping motion: when the hand moves closer to the sensor, the system starts inflating, and when the hand moves away, it switches to deflation.
 
-The sensor was connected to the Arduino, and we used the NewPing library to read distance values. In the code, a threshold was set so that when the hand comes closer than a certain distance, the inflation pump is activated. When the hand moves back again, the system switches to deflation.
+The sensor was connected to the Arduino, and we used the NewPing library to read the distance values. In the code, we set a threshold distance so that the system reacts when the hand gets close enough. Below that point, the inflation pump turns on, and when the hand moves back, it changes to deflation.
 
 https://github.com/user-attachments/assets/0e2c1508-46c0-4f7f-ac64-66a07c5c95a7
 
@@ -308,7 +308,7 @@ https://github.com/user-attachments/assets/47d95dc2-21e7-4a35-a051-9deea6457f63
 
 <p align="center"><em>Video 9: Full system demonstration — sensor-driven inflate and deflate cycle</em></p>
 
-**Observations:** The ultrasonic sensor worked quite reliably and responded well to hand movements. The interaction felt fairly natural, almost like manually pumping air. The MOSFET modules handled the pumps without any issues, and the valve switched correctly between the two airflow paths.
+**Observations:** The ultrasonic sensor worked quite consistently and responded well to hand movements. The interaction felt pretty intuitive in practice, almost like manually pumping air. The pumps and MOSFET modules didn’t cause any issues, and the valve also switched correctly between the two airflow paths.
 
 ---
 
