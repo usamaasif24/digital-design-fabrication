@@ -587,33 +587,51 @@ The third and longest course covered the Part Studio, the environment where sket
 ---
 
 # Exercise 8: 3D Printing — Phone/Tablet Stand
-**Digital Design & Fabrication (inf175)**
+
+**Digital Design & Fabrication (inf175)**  
 Carl von Ossietzky Universität Oldenburg · July 2026
+
 ---
+
 ## Overview
+
 For this exercise we designed a phone/tablet stand in CAD and printed it on the lab's FDM printers. The idea was to go through the full CAD → slicer → print workflow from the lecture properly — thinking about orientation and supports instead of just printing whatever shape came to mind first.
+
 ---
+
 ## Design
+
 The stand is basically a triangular gusset — two angled side walls meeting at the top, a flat base, and a small slotted tab at the back that holds the phone at an angle. The sketch was built on the front, top and right planes and fully constrained before extruding, then the slot was cut afterward as a separate feature.
+
 <p align="center">
   <img src="ex8_cad_model.jpg" width="450">
 </p>
 <p align="center"><em>Fig 17: CAD model of the stand, front/top/right planes visible</em></p>
+
 The shape was kept simple on purpose — flat panels, one slot — so it could print without supports if oriented properly, based on what we covered in the lecture about overhang angles and the slicer's support threshold.
+
 ---
+
 ## Slicing
+
 We laid the STL on its side in the slicer, using the triangular face as the base instead of standing it up on its thin edge. That kept the long sloped face shallow enough to stay under the default support threshold, so the main body didn't need any supports at all. The small tab at the back had a bit of an overhang, so the slicer added a few support lines under it.
+
 <p align="center">
   <img src="ex8_slicer_preview.jpg" width="450">
 </p>
 <p align="center"><em>Fig 18: Sliced preview showing the stand lying on its triangular face</em></p>
+
 Settings: 0.2 mm layer height, 15% infill, PLA. Since the part is mostly wide flat panels rather than something tall, orientation mattered more here for avoiding supports than for print strength — the panels mainly deal with bending forces, not stress along the layer lines.
+
 ---
+
 ## Print & Result
+
 <p align="center">
   <img src="ex8_finished_print.jpg" width="450">
 </p>
 <p align="center"><em>Fig 19: Finished PLA print (black), photographed after removing from the bed</em></p>
+
 The print came out solid overall — sharp corners, good layer adhesion, no warping or lifting at the base. The triangular shape gave it a large flat contact area on the bed, so adhesion wasn't an issue at all, unlike the taller/narrower prints from the lecture that need a brim. The one rough spot is some minor stringing around the slotted tab, visible in the photo — cosmetic only, didn't affect the fit or how sturdy the part is.
 
 <p align="center">
@@ -624,7 +642,9 @@ The print came out solid overall — sharp corners, good layer adhesion, no warp
 With the phone in it, the stand holds up fine under real weight and sits at the angle it was designed for — matching the CAD model closely.
 
 ---
+
 ## Components Used
+
 - CAD software (Onshape)
 - FDM 3D printer (lab machine, QIDI-type slicer workflow)
 - PLA filament, 0.4 mm nozzle
