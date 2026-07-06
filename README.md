@@ -614,14 +614,14 @@ The shape was kept simple on purpose — flat panels, one slot — so it could p
 
 ## Slicing
 
-I laid the STL on its side in the slicer, using the triangular face as the base instead of standing it up on its thin edge. That kept the long sloped face shallow enough to stay under the default support threshold, so the main body didn't need any supports at all. The small tab at the back had a bit of an overhang, so the slicer added a few support lines under it.
+The model was exported as a STEP file, imported into QIDI Studio, and sliced there, saving the project as a .3mf. I laid it on its side, using the triangular face as the base instead of standing it up on its thin edge. That kept the long sloped face shallow enough to stay under the default support threshold, so the main body needed no supports. The small tab at the back had a bit of an overhang, so the slicer added a few support lines under just that feature.
 
 <p align="center">
   <img src="ex8_slicer_preview.jpg" width="450">
 </p>
 <p align="center"><em>Fig 18: Sliced preview showing the stand lying on its triangular face</em></p>
 
-Settings: 0.2 mm layer height, 15% infill, PLA. Since the part is mostly wide flat panels rather than something tall, orientation mattered more here for avoiding supports than for print strength — the panels mainly deal with bending forces, not stress along the layer lines.
+Settings: 0.2 mm layer height, 15% infill, PLA. 15% is enough since most of an FDM part's load-bearing strength comes from the outer walls, not the infill — this part is flat panels handling bending loads, not dense structural infill. Orientation mattered more here for avoiding supports than for strength.
 
 ---
 
@@ -632,7 +632,7 @@ Settings: 0.2 mm layer height, 15% infill, PLA. Since the part is mostly wide fl
 </p>
 <p align="center"><em>Fig 19: Finished PLA print (black), photographed after removing from the bed</em></p>
 
-The print came out solid overall — sharp corners, good layer adhesion, no warping or lifting at the base. The triangular shape gave it a large flat contact area on the bed, so adhesion wasn't an issue at all, unlike the taller/narrower prints from the lecture that need a brim. The one rough spot is some minor stringing around the slotted tab, visible in the photo — cosmetic only, didn't affect the fit or how sturdy the part is.
+The print came out solid overall — sharp corners, good layer adhesion, no warping or lifting at the base. Bed adhesion wasn't an issue, since the triangular shape gave it a large flat contact area on the build plate — unlike the taller/narrower prints from the lecture that need a brim. The one rough spot is some minor stringing around the slotted tab, visible in the photo — cosmetic only, didn't affect fit or sturdiness.
 
 <p align="center">
   <img src="ex8_in_use.jpg" width="450">
@@ -646,6 +646,6 @@ With the phone in it, the stand holds up fine under real weight and sits at the 
 ## Components Used
 
 - CAD software (Onshape)
-- FDM 3D printer (lab machine, QIDI-type slicer workflow)
+- FDM 3D printer (lab machine, QIDI Studio slicer workflow)
 - PLA filament, 0.4 mm nozzle
 - Slicer settings: 0.2 mm layer height, 15% infill, no supports on main body
