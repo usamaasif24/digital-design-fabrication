@@ -595,7 +595,7 @@ Carl von Ossietzky Universität Oldenburg · July 2026
 
 ## Overview
 
-For this exercise we designed a phone/tablet stand in CAD and printed it on the lab's FDM printers. The idea was to go through the full CAD → slicer → print workflow from the lecture properly — thinking about orientation and supports instead of just printing whatever shape came to mind first.
+For this exercise I designed a phone/tablet stand in CAD and printed it on the lab's FDM printers. The idea was to go through the full CAD → slicer → print workflow from the lecture properly — thinking about orientation and supports instead of just printing whatever shape came to mind first.
 
 ---
 
@@ -608,13 +608,13 @@ The stand is basically a triangular gusset — two angled side walls meeting at 
 </p>
 <p align="center"><em>Fig 17: CAD model of the stand, front/top/right planes visible</em></p>
 
-The shape was kept simple on purpose — flat panels, one slot — so it could print without supports if oriented properly, based on what we covered in the lecture about overhang angles and the slicer's support threshold.
+The shape was kept simple on purpose — flat panels, one slot — so it could print without supports if oriented properly, based on what was covered in the lecture about overhang angles and the slicer's support threshold.
 
 ---
 
 ## Slicing
 
-We laid the STL on its side in the slicer, using the triangular face as the base instead of standing it up on its thin edge. That kept the long sloped face shallow enough to stay under the default support threshold, so the main body didn't need any supports at all. The small tab at the back had a bit of an overhang, so the slicer added a few support lines under it.
+I laid the STL on its side in the slicer, using the triangular face as the base instead of standing it up on its thin edge. That kept the long sloped face shallow enough to stay under the default support threshold, so the main body didn't need any supports at all. The small tab at the back had a bit of an overhang, so the slicer added a few support lines under it.
 
 <p align="center">
   <img src="ex8_slicer_preview.jpg" width="450">
