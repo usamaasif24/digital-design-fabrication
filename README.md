@@ -585,6 +585,7 @@ The third and longest course covered the Part Studio, the environment where sket
 ---
 
 ---
+
 # Exercise 8: 3D Printing — Phone/Tablet Stand
 
 **Digital Design & Fabrication (inf175)**
